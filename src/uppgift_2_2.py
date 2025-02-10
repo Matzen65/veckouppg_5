@@ -6,6 +6,8 @@
 #  Funktionen returnerar antal ord, orden separeras med mellanslag.
 
 # 2b Skriv testfall som testar alla AK.
+
+
 # Svar 2b: Se test_uppgift_2_2.py
 
 # 2c Implementera funktionen, så att alla testfall blir gröna.

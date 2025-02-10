@@ -6,35 +6,34 @@
 
 # 1 Vilka ekvivalensklasser har uttrycken?
 
-# 1a. x > 100
+#### 1a. x > 100
 
+# Svar 1a.
 # Visar True om 'x' Är en int eller float som är större än 100,även flyttal
 # Visar False om 'x' Är int eller float som är lika med 100 eller mindre.
-# 1b. y == 42
+
+#### 1b. y == 42
 # Visar True om 'y' Är int eller float som är lika med 42
 # Visar False om 'y' Är int eller float som inte är lika 42.
 
-# 1c len(text) >= 5
+####1c. len(text) >= 5
 # Visar True om 'text' Alla strängar av längden 5 eller längre.
 # Visar False om 'text' Om strängen har en längd som är under 5.
 
-# 1d.  z == True
+#### 1d.  z == True
 # Visar True om 'z' boolean uttrycket är True.
 # Visar False om 'z' boolean uttrycket är False
 
-# 1e. 8 < v < 16
-
+#### 1e. 8 < v < 16
 # Visar True om 'v' Är int eller float är större än 8 samt mindre än 16.
 # Visar False om 'v' Är int eller float är lika med 8 eller mindre eller 16 eller större.
 # Booleska uttryck och ger också False.
 
-# 1f.
-# w == 32 or w == 64 or w == 128
-# Visar True om 'w' Är lika med int eller float som antar värdena 32, 64 eller 128.
+#### 1f. w == 32 or w == 64 or w == 128
+# Visar True om 'w' Är lika med ett int eller float som antar värdena 32, 64 eller 128.
 # Visar False om 'w' Är andra värden.
 
-# 1g. if x < 5:  elif x < 10:  elif x < 15:  else
-
+#### 1g. if x < 5:  elif x < 10:  elif x < 15:  else
 # Visar True för x < 5 Visar True om 'x' är Int eller float som är strikt mindre än 5.
 # Visar True för x < 10 visar True om 'x' är Int eller float, lika med 5 eller större och mindre än 10.
 # Visar True för x < 15 visar True om 'x' är Int eller float, lika med 10 eller större och mindre än 15.
@@ -51,14 +50,14 @@ def sum_list(list):
 
 def test_empty_list():
     expected = 0
-    actual   = sum_list([])
+    actual = sum_list([])
     assert actual == expected
 
 def test_number_list():
     assert sum_list([5]) == 5
-    assert sum_list([1,2,3,4,5]) == 15
-    assert sum_list([0,0,0,0,0]) == 0
-    assert sum_list([-1,-2,-3,-4,-5]) == -15
+    assert sum_list([1,2,3,4]) == 10
+    assert sum_list([-1, 2, -3, 4]) == 3
+    assert sum_list([1, 2, 7, 4]) == 14
 
 # 3a Diskutera följande kod, räcker det med ett testfall för att testa funktionen?
 
@@ -108,9 +107,3 @@ def test_find_biggest_number_list_show_none_when_empty():
     actual = find_max([])
     assert actual == excepted
 
-
-# 5 Winner takes it all brukar det ju heta, men nu ska vi försöka ge lite heder åt alla andrapristagare.
-# Formulera testfall för en funktion som hittar näst största talet i en lista!
-# Returnerar det nästa största talet i listan
-# Returnerar None om det inte finns något
-# Om det är delad förstaplats så returneras det talet
